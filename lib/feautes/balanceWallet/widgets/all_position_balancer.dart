@@ -21,6 +21,7 @@ class PositionBalance extends StatelessWidget {
                   height: 250,
                   child: Column(
                     children: [
+                      
                       uppContainerProtocol(protocol),
                       Expanded(
                         child: ListView.builder(

@@ -17,6 +17,7 @@ Future<List<Token>> getBalanceCrypto() async {
     "Accept": "application/json",
     "X-API-Key": devKey
   };
+  
   List<Token> result = [];
 
   for (int i = 0; i < activeChains.length; i += 1) {
