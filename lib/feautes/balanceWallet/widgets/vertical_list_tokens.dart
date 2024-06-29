@@ -38,10 +38,12 @@ Widget cellToken(Token token) {
 
 Widget leftLogo(token) {
   return Stack(alignment: Alignment.bottomRight, children: [
-    Image.network(
-      token.logo,
-      fit: BoxFit.contain,
-    ),
+    token.logo != null
+        ? Image.network(
+            token.logo,
+            fit: BoxFit.contain,
+          )
+        : Image.asset("assets/icons/logoIcon.png"),
     Align(
       alignment: Alignment.bottomRight,
       child: Image.network(

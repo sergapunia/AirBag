@@ -5,7 +5,7 @@ class Token {
   String adress;
   String symbol;
   String name;
-  String logo;
+  String? logo;
   double balance;
   double price;
   double changePercent24h;
